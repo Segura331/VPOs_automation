@@ -20,6 +20,7 @@ def create_excel_sheets(input_file, output_file):
            
             # Write the filtered data to a new sheet named after the product configuration name
             filtered_data.to_excel(writer, sheet_name=config_name, index=False)
+            data_input = data_input.drop(workweek,site,quantity,eimslot,DECIMA_bucket,program_name,VF_1,VF_2,	VF_3,	VF_4,	VF_5,	VF_6,	RV1,	RV2,	RV3,	RV4,	RV5,DpmBucket	DpmBucket_RV	DpmBucketAccuracy	prod_requestid	rv_requestid	L2RV_Candidate	L2RVRULES	LV2 RV From KX	RV_Type	RUPS_WO,eqa_rv	device_name	qa_wo)
  
 # Usage
 create_excel_sheets('prueba1.xlsx', 'output.xlsx')
