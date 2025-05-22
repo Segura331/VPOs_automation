@@ -21,7 +21,7 @@ def create_excel_sheets(input_file, output_file):
     with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
         # Iterate over each unique product configuration name
         for config_name in product_configurations:
-            # Filter the DataFrame for the current product configuration name
+            # Filter the DataFrame for the current product configuration namee
             filtered_data = data_input[
                 (data_input['product_configuration_name'] == config_name) &
                 (data_input['my_bucket'] == 'RV')
